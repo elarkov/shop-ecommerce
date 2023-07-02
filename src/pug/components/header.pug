@@ -1,2 +1,32 @@
 mixin header()
-  
+  .overlay(data-overlay)
+
+  .modal(data-modal)  
+    .modal-close-overlay(data-modal-overlay)
+    .modal-content
+      button.modal-close-btn(data-modal-close)
+        ion-icon(name="close-outline")
+
+      .newsletter-img
+        img(src="img/newsletter.png", alt="" width="400" height="400")
+
+      .newsletter 
+        form(action="#")
+          .newsletter-header 
+            h3.newsletter-title Подпишитесь на обновления
+            .newsletter-desc <b>Евгений</b>, подписывайся на новые товары и скидки
+            input(type="email" name="email" class="email-field" placeholder="Email" required)
+            button(class="btn-newsletter" type="submit") Подписаться 
+
+  .notification-toast(data-toast)
+    button.toast-close-btn(data-toast-close)
+      ion-icon(name="close-outline")
+    
+
+    .toast-banner 
+      img(src="img/products/jewellery-1.jpg", alt="" width="80" height="70")
+    .toast-detail 
+      p.toast-message Только что купили
+      p.toast-title Серьги Rose Gold
+      p.toast-meta 
+        <time datetime="PT2M"> 2 минуты</time> назад
