@@ -3,7 +3,91 @@ extends ../layout/main
 block mainVariables
   - pageTitle = 'B-Shop - обувь, одежда, аксессуары';
 
+//- MAIN
 block mainContent
   main.main
-    section.buy 
-      .container.buy__container 
+    //- BANNER
+    .banner 
+      .container 
+        .slider-container.has-scollbar 
+          .slider-item 
+            img.banner-img(src="img/banner-1.jpg", alt="")
+            .banner-content 
+              p.banner-subtitle Тренды
+              h2.banner-title Распродажа женксой коллекции
+              p.banner-text 200 рублей
+              a.banner-btn(href="") Купить
+          .slider-item 
+            img.banner-img(src="img/banner-2.jpg", alt="")
+            .banner-content 
+              p.banner-subtitle Аксессуары
+              h2.banner-title Очки
+              p.banner-text 200 рублей
+              a.banner-btn(href="") Купить
+          .slider-item 
+            img.banner-img(src="img/banner-3.jpg", alt="")
+            .banner-content 
+              p.banner-subtitle Ремни
+              h2.banner-title Распродажа женкских ремней
+              p.banner-text 200 рублей
+              a.banner-btn(href="#") Купить
+    //-CATEGORY
+    .category 
+      .container 
+        .category-item-container.has-scrollbar 
+          .category-item 
+            .category-img-box
+              img(src="img/icons/dress.svg", alt="" width="30")
+            .category-content-box 
+              .category-content-flex 
+                h3.category-item-title Платья
+                .category-item-amount (43)
+              a.category-btn(href="#") Показать все
+          .category-item 
+            .category-img-box
+              img(src="img/icons/jacket.svg", alt="" width="30")
+            .category-content-box 
+              .category-content-flex 
+                h3.category-item-title Куртки
+                .category-item-amount (56)
+              a.category-btn(href="#") Показать все
+          .category-item 
+            .category-img-box
+              img(src="img/icons/glasses.svg", alt="" width="30")
+            .category-content-box 
+              .category-content-flex 
+                h3.category-item-title Аксессуары
+                .category-item-amount (33)
+              a.category-btn(href="#") Показать все
+          .category-item 
+            .category-img-box
+              img(src="img/icons/shorts.svg", alt="" width="30")
+            .category-content-box 
+              .category-content-flex 
+                h3.category-item-title Шорты
+                .category-item-amount (25)
+              a.category-btn(href="#") Показать все
+          .category-item 
+            .category-img-box
+              img(src="img/icons/bag.svg", alt="" width="30")
+            .category-content-box 
+              .category-content-flex 
+                h3.category-item-title Сумки
+                .category-item-amount (123)
+              a.category-btn(href="#") Показать все
+          .category-item 
+            .category-img-box
+              img(src="img/icons/watch.svg", alt="" width="30")
+            .category-content-box 
+              .category-content-flex 
+                h3.category-item-title Часы
+                .category-item-amount (84)
+              a.category-btn(href="#") Показать все
+          .category-item 
+            .category-img-box
+              img(src="img/icons/hat.svg", alt="" width="30")
+            .category-content-box 
+              .category-content-flex 
+                h3.category-item-title Шапки
+                .category-item-amount (73)
+              a.category-btn(href="#") Показать все
