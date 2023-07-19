@@ -61,3 +61,15 @@ body::-webkit-scrollbar-thumb:hover {
     }
   }
 }
+
+.title {
+  color: $eerie-black;
+  font-size: $fs-5;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $cultured;
+  margin-bottom: 30px;
+
+}
