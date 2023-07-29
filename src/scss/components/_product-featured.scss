@@ -1,0 +1,135 @@
+.product-featured {
+  margin-bottom: 30px;
+  .showcase-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+  }
+  .showcase-container {
+    min-width: 100%;
+    padding: 30px;
+    border: 1px solid $cultured;
+    border-radius: $border-radius-md;
+    scroll-snap-align: start;
+  }
+  .showcase-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .showcase-content {
+    margin-top: 30px;
+  }
+  .showcase-rating {
+    color: $sandy-brown;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .showcase-title {
+    font-size: $fs-7;
+    color: $eerie-black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .showcase-desc {
+    color: $sonic-silver;
+    font-size: $fs-7;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  .price-box {
+    font-size: $fs-3;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .price {
+    color: $salomon-pink;
+    font-weight: 700;
+  }
+  del {
+    color: $sonic-silver;
+    font-weight: 300;
+  }
+  .add-cart-btn {
+    background: $salomon-pink;
+    padding: 8px 15px;
+    color: $white;
+    font-size: $fs-9;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: $border-radius-md;
+    margin-bottom: 15px;
+    transition: $transition;
+    &:hover {
+      background: $eerie-black;
+      color: $white;
+    }
+  }
+  .showcase-status {
+    margin-bottom: 15px;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $eerie-black;
+      font-size: $fs-9;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+  }
+  .showcase-status-bar {
+    background: $cultured;
+    position: relative;
+    height: 10px;
+    border-radius: 5px;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 3px;
+      left: 3px;
+      height: 4px;
+      width: 40%;
+      background: $salomon-pink;
+      border-radius: 4px;
+    }
+  }
+  .countdown-desc {
+    color: $eerie-black;
+    font-size: $fs-9;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .countdown {
+    display: flex;
+    gap: 5px;
+  }
+  .countdown-content {
+    padding: 5px;
+    background: $cultured;
+    border-radius: $border-radius-md;
+    text-align: center;
+
+  }
+  .display-number {
+    color: $eerie-black;
+    font-size: $fs-5;
+    font-weight: 500;
+    min-width: 40px;
+  }
+  .display-text {
+    color: $davys-gray;
+    font-size: $fs-11;
+  }
+
+}
