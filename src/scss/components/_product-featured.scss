@@ -15,13 +15,42 @@
     border-radius: $border-radius-md;
     scroll-snap-align: start;
   }
+  .showcase {
+    @include md-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    > div {
+      @include xl-block {
+        min-width: calc(50% - 10px);
+      }
+    }
+  }
+  .showcase-banner {
+    @include md-block {
+      display: flex;
+    }
+  }
   .showcase-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include sm-block {
+      max-width: 450px;
+      margin: auto;
+    }
+    @include md-block {
+      max-width: fit-content;
+    }
   }
   .showcase-content {
     margin-top: 30px;
+    @include md-block {
+      margin-top: 0;
+      min-width: calc(100% - 345px);
+    }
   }
   .showcase-rating {
     color: $sandy-brown;
@@ -113,6 +142,9 @@
   .countdown {
     display: flex;
     gap: 5px;
+    @include sm-block {
+      gap: 20px;
+    }
   }
   .countdown-content {
     padding: 5px;
@@ -126,6 +158,9 @@
     font-size: $fs-5;
     font-weight: 500;
     min-width: 40px;
+    @include xl-block {
+      font-size: 1.125rem;
+    }
   }
   .display-text {
     color: $davys-gray;

@@ -7,6 +7,16 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
+  @include sm-block {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  @include md-block {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include xl-block {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .showcase {
     border: 1px solid $cultured;
     border-radius: $border-radius-md;
@@ -126,5 +136,27 @@
   }
   del {
     color: $sonic-silver;
+  }
+}
+
+.product-container .container {
+  @include md-block {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.product-box {
+  @include md-block {
+    min-width: calc(75% - 15px);
   }
 }

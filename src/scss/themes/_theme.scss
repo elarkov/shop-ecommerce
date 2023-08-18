@@ -17,10 +17,23 @@ body {
   scroll-behavior: smooth;
   background: $white;
   padding-bottom: 60px;
+  @include xl-block {
+    padding-bottom: 0;  
+  }
 }
 
 .container {
   @include wrapper();
+  max-width: 360px;
+  @include sm-block {
+    max-width: 1190px;
+  }
+  @include md-block {
+    max-width: 980px;
+  }
+  @include xl-block {
+    max-width: 1190px;
+  }
 }
 
 /**

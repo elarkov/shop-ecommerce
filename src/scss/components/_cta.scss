@@ -4,6 +4,20 @@
   border-radius: $border-radius-md;
   overflow: hidden;
   margin-bottom: 25px; 
+  @include sm-block {
+    aspect-ratio: 6 / 5;
+
+  }
+  @include md-block {
+    min-width: calc(50% - 15px);
+    width: calc(50% - 15px);
+    margin-bottom: 0;
+  }
+  @include xl-block {
+    min-width: calc(50% - 20px);
+    width: calc(50% - 20px);
+    aspect-ratio: unset;
+  }
 }
 
 .cta-banner {
@@ -22,6 +36,9 @@
   padding: 15px 20px;
   text-align: center;
   border-radius: $border-radius-sm;
+  @include sm-block {
+    padding: 40px;
+  }
   .discount {
     background: $eerie-black;
     color: $white;
@@ -33,6 +50,10 @@
     padding: 0 5px;
     border-radius: $border-radius-sm;
     margin-bottom: 5px;
+    @include xl-block {
+      padding: 5px;
+      font-size: 1.325rem;
+    }
   }
 }
 
@@ -41,12 +62,20 @@
   font-size: $fs-5;
   text-transform: capitalize;
   margin-bottom: 5px;
+  @include xl-block {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
 }
 
 .cta-text {
   color: $sonic-silver;
   font-size: $fs-7;
   margin-bottom: 5px;
+  @include xl-block {
+    font-size: 1.375rem;
+  }
 }
 
 .cta-btn {
@@ -55,6 +84,10 @@
   text-transform: uppercase;
   font-weight: 700;
   margin: auto;
+  @include xl-block {
+    font-size: 1.45rem;
+    font-weight: 700;
+  }
 }
 
 /*SERVICE*/

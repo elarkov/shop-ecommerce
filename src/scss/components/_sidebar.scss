@@ -12,6 +12,20 @@
   visibility: hidden;
   transition: 0.5s ease;
   z-index: 20;
+  @include md-block {
+      font-size: 0.941rem;
+      position: sticky;
+      top: 30px;
+      left: 0;
+      padding: 0;
+      min-width: calc(25% - 15px);
+      margin-bottom: 30px;
+      visibility: visible;
+      overflow-y: auto;
+      -ms-scroll-chaining: chained;
+      overscroll-behavior: auto;
+      z-index: 0;
+  }
   &.active {
     left: 0;
     visibility: visible;
@@ -21,6 +35,12 @@
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid $cultured;
+    @include md-block {
+      padding: 20px;
+      margin-bottom: 30px;
+      border: 1px solid $cultured;
+      border-radius: $border-radius-md;
+    }
   }
   &-top {
     display: flex;
@@ -39,6 +59,9 @@
     color: $eerie-black;
     font-size: 22px;
     font-weight: 600;
+    @include md-block {
+      display: none;
+    }
     ion-icon {
       --ionicon-stroke-width: 50px;
     }

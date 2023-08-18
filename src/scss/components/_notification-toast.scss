@@ -15,6 +15,9 @@
   transition: 0.5s ease-in-out;
   z-index: 5;
   animation: slideInOut 10s ease-in-out infinite;
+  @include md-block {
+    bottom: 30px;
+  }
 }
 
 @keyframes slideInOut {

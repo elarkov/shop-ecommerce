@@ -1,5 +1,22 @@
+.testimonial {
+  @include md-block {
+    min-width: calc(50% - 15px);
+    width: calc(50% - 15px);
+    margin-bottom: 0;
+  }
+  @include xl-block {
+    min-width: calc(25% - 20px);
+    width: calc(25% - 20px);
+  }
+}
 .testimonials-box {
   margin-bottom: 50px;
+  @include md-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 30px;
+  }
 }
 .testimonial-card {
   padding: 30px 20px;
@@ -35,4 +52,26 @@
   color: $sonic-silver;
   font-size: $fs-7;
   
+}
+
+.service {
+  @include xl-block {
+    min-width: calc(25% - 20px);
+    width: calc(25% - 20px);
+  }
+}
+
+.service-container {
+  @include xl-block {
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 30px;
+  }
+}
+
+.sevice-item {
+  @include xl-block {
+    flex-direction: row;
+    text-align: left;
+  }
 }
